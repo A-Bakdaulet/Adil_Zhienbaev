@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adil Zhiyenbayev</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            border-bottom: 1px solid rgb(230, 226, 226);
+            padding-bottom: 13px;
+        }
+        .nav-item {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 15px;
+            padding: 7px 15px;
+            border-radius: 17px;
+            background-color: transparent; 
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-item.active {
+            color: #3399FF;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: rgba(173, 216, 230, 1);
+        }
+        .profile-container {
+            
+            max-width: 900px;
+            width: 80%; 
+            margin: 40px auto;
+            padding: 40px; 
+            padding-bottom: 0; 
+            border-radius: 20px;
+            border: 1.5px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            position: relative;
+            
+        }
+        .profile-container2 {
+            
+            max-width: 900px;
+            width: 80%; 
+            height: 400px;
+            margin: 40px auto;
+            padding: 40px; 
+            padding-bottom: 0; 
+            border-radius: 20px;
+            border: 1.5px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: left;
+            position: relative;
+            
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 45px;
+            left: 40px;
+        }
+        .profile-text {
+            
+            font-size: 16px;
+            line-height: 200;
+            width: 100%; 
+            padding: 20px;
+            margin-top: 220px;
+            
+        }
+        .profile-title {
+            position: relative;
+            top: -200px; 
+        }
+        .profile-text-bottom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+       }
+        .footer-text {
+            color: gray;
+            text-align: center;
+            margin-top: 20px;
+       }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            padding-bottom: 30px; 
+        }
+        .profile-container {
+            margin-bottom: 10px; 
+        }
+
+        .Baha1{
+            position: relative;
+            top: 10px;
+            margin-left: -170px;
+            text-align:center; 
+            font-size:29px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+        }
+
+        .Baha2 {
+            position: relative;
+            top: 15px;
+            margin-left: 75px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size:16px; 
+            font-weight:200px; 
+            font-family: 'Arial', sans-serif;
+            
+        }
+        .Baha3{
+            position: relative;
+            top: 50px;
+            margin-left: -302px;
+            text-align: center;
+            font-size:17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+        }
+        .Baha4{
+            position: relative;
+            top: 30px;
+            margin-left: 5px;
+            text-align: center;
+            font-size:15px; 
+            font-weight:250px; 
+            font-family: 'Arial', sans-serif;
+        }
+        .Baha5{
+            position: relative;
+            top: 45px;
+            margin-left: -350px;
+            text-align: center;
+            font-size:17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+        }
+        .Baha6{
+            position: relative;
+            top: 25px;
+            margin-left: -90px;
+            text-align: center;
+            font-size:16px; 
+            font-weight:250px; 
+            font-family: 'Arial', sans-serif;
+        }
+        .textColor{
+            color:rgb(204, 217, 218);
+            font-weight: 100;
+            
+        }
+        .instagram-icon {
+            position: relative;
+            top: 47px;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+            margin-left: -135px;
+        }
+
+        .instagram-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .telegram-icon {
+            position: relative;
+            top: 2px;
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+            margin-left: -200px;
+        }
+
+        .telegram-icon:hover {
+            transform: scale(1.2);
+        }
+
+
+        .profile-container2 {
+            
+            max-width: 900px;
+            width: 80%; 
+            height: 1500px;
+            margin: 40px auto;
+            padding: 40px; 
+            padding-bottom: 0; 
+            border-radius: 20px;
+            border: 1.5px solid rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            position: relative;
+            
+        }
+        .resume-card {
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 310px; 
+            height: 150px; 
+            min-height: 140px;
+
+            top: 75px; 
+            left: 50px; 
+        }
+        .glowing-line {
+            width: 1.5px; 
+            height: 200px; 
+            background: linear-gradient(to bottom, rgba(51, 153, 255, 1), rgba(51, 153, 255, 0)); /* Синий градиент */
+            
+            position: absolute;
+            top: 0px; 
+            left: -25px; 
+            box-shadow: 0px 0px 10px rgba(6, 37, 63, 0.8), 
+                        0px 0px 20px rgba(10, 32, 59, 0.5);
+        }
+
+        .Mus1{
+            position: relative;
+            top: 10px;
+            margin-top: -85px;
+            left: -450px; 
+            margin-left: 0px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+        .glowing-line2{
+            width: 1.5px; 
+            height: 250px; 
+            background: linear-gradient(to bottom, rgba(51, 153, 255, 1), rgba(51, 153, 255, 0)); /* Синий градиент */
+            
+            position: absolute;
+            top: 0px; 
+            left: -25px; 
+            box-shadow: 0px 0px 10px rgba(6, 37, 63, 0.8), 
+                        0px 0px 20px rgba(10, 32, 59, 0.5);
+        }
+        .resume-research{
+            display: flex;
+            background-color: rgba(9,12,20,255);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px;
+            height: 170px; 
+            min-height: 170px; 
+
+            top: 0px; 
+            left: 435px; 
+        }
+
+        .education{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 320px;
+            font-size: 14px;
+            margin-left: 50px;
+            margin-top: -40px;
+            line-height: 27px;
+        }
+        .Mus2{
+            position: relative;
+            margin-left: 45px;
+            top: -5px;
+            text-align: center;
+            font-size:17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width: 290px;
+            transition: transform 0.3s ease;
+        }
+        .Mus2 a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+        .Mus2:hover {
+            transform: scale(1.06); 
+        }
+        .Mus2 a:hover {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .Mus3{
+            position: relative;
+            top: 50px;
+            margin-left: 45px;
+            top: -10px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        
+        .Mus4 {
+            position: absolute; 
+            top: -55px;
+            left: -170px; 
+            margin-left: 150px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .researchText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 800px;
+            font-size: 14px;
+            margin-left: -110px;
+            margin-top: 15px;
+            line-height: 27px;
+        }
+        .Mus5{
+            position: absolute;
+            margin-left: -50px;
+            top: -5px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:290px;
+        }
+        .Mus6{
+            position: absolute;
+            margin-left: -70px;
+            top: 25px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+
+        .resume-research3{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 310px; 
+            height: 200px; 
+            min-height: 140px;
+
+            top: 260px; 
+            left: -411px; 
+        }
+        .glowing-line3{
+            width: 1.5px; 
+            height: 900px; 
+            background: linear-gradient(to bottom, rgba(51, 153, 255, 1), rgba(51, 153, 255, 0)); /* Синий градиент */
+            
+            position: absolute;
+            top: 0px; 
+            left: -25px;
+            box-shadow: 0px 0px 10px rgba(6, 37, 63, 0.8), 
+                        0px 0px 20px rgba(10, 32, 59, 0.5);
+        }
+
+        .Mus7{
+            position: absolute;
+            top: 10px;
+            margin-top: -55px;
+            left: 2px; 
+            width: 300px;
+            margin-left: 0px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+        .DombraText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 320px;
+            font-size: 14px;
+            margin-left: 42px;
+            margin-top: 42px;
+            line-height: 27px;
+        }
+        .Mus9{
+            position: absolute;
+            margin-left: 10px;
+            top: 34px;
+            text-align: center;
+            font-size:14px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus9b{
+            position: absolute;
+            margin-left: 18px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:290px;
+        }
+
+        .resume-research4{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 310px; 
+            height: 150px; 
+            min-height: 120px; 
+
+            top: 260px; 
+            left: 25px; 
+        }
+        
+        .chessText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 340px;
+            font-size: 14px;
+            margin-left: 0px;
+            margin-top: 27px;
+            line-height: 27px;
+        }
+        .Mus4{
+            position: absolute;
+            margin-left: 175px;
+            top: 34px;
+            text-align: center;
+            font-size:14px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus4b{
+            position: absolute;
+            margin-left: -85px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:290px;
+        }
+
+        .resume-research5{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 310px; 
+            height: 100px; 
+            min-height: 160px;
+
+            top: 210px; 
+            left: 0px; 
+        }
+       
+        .CodeText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 330px;
+            font-size: 14px;
+            margin-left: 5px;
+            margin-top: 35px;
+            line-height: 28px;
+        }
+        .Mus5a{
+            position: absolute;
+            margin-left: -75px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus5b{
+            position: absolute;
+            margin-left: -15px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:320px;
+        }
+
+
+        .resume-research6{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 310px; 
+            height: 50px; 
+            min-height: 140px; 
+
+            top: 220px; 
+            left: -0px; 
+        }
+        
+        .CubicText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 320px;
+            font-size: 14px;
+            margin-left: 42px;
+            margin-top: -15px;
+            line-height: 27px;
+        }
+
+        .Mus6a{
+            position: absolute;
+            margin-left: -75px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus6b{
+            position: absolute;
+            margin-left: -15px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:320px;
+        }
+
+        .resume-research7{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px; 
+            height: 100px; 
+            min-height: 120px; 
+            top: -427px; 
+            left: 408px; 
+        }
+
+        .glowing-line4{
+            width: 1.5px; 
+            height: 960px; 
+            background: linear-gradient(to bottom, rgba(51, 153, 255, 1), rgba(51, 153, 255, 0)); /* Синий градиент */
+            
+            position: absolute;
+            top: 0px; 
+            left: -25px; 
+            box-shadow: 0px 0px 10px rgba(6, 37, 63, 0.8), 
+                        0px 0px 20px rgba(10, 32, 59, 0.5);
+        }
+        .Mus8{
+            position: relative;
+            margin-left: 45px;
+            top: -50px;
+            text-align: center;
+            font-size:24px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width: 290px;
+            left: -40px;
+           
+        }
+        .ExperText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 440px;
+            font-size: 14px;
+            margin-left: 48px;
+            margin-top: 15px;
+            line-height: 27px;
+        }
+
+        .Mus8a{
+            position: absolute;
+            margin-left: -25px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus8b{
+            position: absolute;
+            margin-left: 25px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:320px;
+        }
+
+        .resume-research8{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px; 
+            height: 100px; 
+            min-height: 150px; 
+
+            top: 180px; 
+            left: 25px; 
+        }
+
+        
+        .olymText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 700px;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 25px;
+            line-height: 27px;
+        }
+
+        .Mus10a{
+            position: absolute;
+            margin-left: -65px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus10b{
+            position: absolute;
+            margin-left: -20px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:500px;
+        }
+
+        .resume-research9{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px; 
+            height: 100px; 
+            min-height: 100px; 
+
+            top: 210px; 
+            left: -0px; 
+        }
+
+        
+        .juriText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 700px;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 25px;
+            line-height: 27px;
+        }
+
+        .Mus11a{
+            position: absolute;
+            margin-left: -95px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus11b{
+            position: absolute;
+            margin-left: -75px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:500px;
+        }
+
+        .resume-research10{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px; 
+            height: 100px; 
+            min-height: 150px; 
+
+            top: 160px;
+            left: 0px;
+        }
+
+        
+        .zertteText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 700px;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 25px;
+            line-height: 27px;
+        }
+
+        .Mus12a{
+            position: absolute;
+            margin-left: -80px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus12b{
+            position: absolute;
+            margin-left: -20px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:500px;
+        }
+
+        .resume-research11{
+            display: flex;
+            background-color: rgba(9,12,20,255); 
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+
+            width: 450px; 
+            height: 100px; 
+            min-height: 10px; 
+
+            top: 220px; 
+            left: 0px; 
+        }
+
+        
+        .mentorText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 700px;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 25px;
+            line-height: 27px;
+        }
+
+        .Mus13a{
+            position: absolute;
+            margin-left: -70px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus13b{
+            position: absolute;
+            margin-left: -170px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width:500px;
+        }
+
+        .resume-research12{
+            display: flex;
+            background-color: rgba(9,12,20,255);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1.5px solid rgba(200, 200, 200, 0.5); 
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            width: 450px;
+            height: 100px; 
+            min-height: 10px; 
+            top: 160px; 
+            left: 0px; 
+        }
+
+        
+        .tutorText{
+            color:rgb(215, 223, 223);
+            font-weight: 100;
+            width: 700px;
+            font-size: 14px;
+            margin-left: 10px;
+            margin-top: 25px;
+            line-height: 27px;
+        }
+
+        .Mus14a{
+            position: absolute;
+            margin-left: -70px;
+            top: 34px;
+            text-align: center;
+            font-size:15px;
+            font-family: 'Arial', sans-serif;
+            width:290px;
+            font-weight: normal; 
+            color: rgba(212, 211, 211, 0.7);
+        }
+        .Mus14b{
+            position: absolute;
+            margin-left: -80px;
+            top: 16px;
+            text-align: center;
+            font-size: 17px; 
+            font-weight:bold; 
+            font-family: 'Arial', sans-serif;
+            width: 500px;
+        }
+
+        .bad1 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -420px;
+            top: 10px;
+
+        }
+        .bad1 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+        .bad2 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -340px;
+            top: 10px;
+        }
+        .bad2 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+        
+        .bad3 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -257px;
+            top: 10px;
+        }
+        .bad3 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+
+        .badge1 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -420px;
+            top: 140px;
+
+        }
+        .badge1 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+        .badge2 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -340px;
+            top: 140px;
+        }
+        .badge2 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+        
+        .badge3 {
+            display: inline-block;
+            background-color: rgb(27, 42, 62);
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            padding: 6px 12px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: -257px;
+            top: 140px;
+        
+        }
+        .badge3 span {
+            color: #6fa8dc;
+            font-size: 12px;
+            display: block;
+        }
+        .Skills{
+            position: absolute;
+            left: -420px;
+            top: -50px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .Languages{
+            font-size: 26px;
+            font-weight: bold;
+            position: absolute;
+            left: -420px;
+            top: 80px;
+        }
+        .con{
+            max-width: 1600px;   
+            margin: 0 auto; 
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav-container">
+        <span class="nav-item active" id="homeBtn">Home</span>
+        <span class="nav-item" id="resumeBtn">Resume</span>
+    </div>
+    
+    
+    <div class="content" id="content"> </div>
+        
+    <script>
+        
+        const homeBtn = document.getElementById("homeBtn");
+        const resumeBtn = document.getElementById("resumeBtn");
+        const content = document.getElementById("content");
+
+        function changeSection(section) {
+            if (section === "home") {
+                content.innerHTML = `
+                <div class="con">
+                    <div class="profile-container">
+                        <img src="img/photos.png" alt="Profile Photo" class="profile-image">
+
+
+                        
+                        <div class="Baha1">
+                            Adil Zhiyenbayev
+                        </div>
+                        <br />
+                    <div class="Baha2">
+                        FizMat 26’ | Founder of “Quark” Olympiad | STEM | ZertteStud | CS2 
+                    </div>
+                    
+                    <div class="Baha3">
+                        Currently in:
+                    </div>
+                    
+                    <div class="Baha4">
+                        NSPM, ALmaty, Kazakhstan
+                    </div>
+
+                    <div class="Baha5">
+                        Email: 
+                    </div>
+
+                    <div class="Baha6">
+                        kukueptapa@gmail.com
+                    </div>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/the.adil/" target="_blank">
+                        <img src="https://i.postimg.cc/KvsDQnmC/image.jpg" alt="Instagram" class="instagram-icon">
+                    </a>
+
+                    <!-- Telegram -->
+                    <a href="https://t.me/heroofhumanity" target="_blank">
+                        <img src="https://i.postimg.cc/MZms0MM8/2.jpg" alt="Telegram" class="telegram-icon">
+                    </a>
+
+                        <div class="profile-text" style="font-size:16px; line-height:1.6; padding: 5px; ">
+                            <div class="profile-title" style="text-align:left; font-size:24px; font-weight:bold; margin-bottom: -200px;">My Philosophy</div>
+                            <p class="textColor">For me, professionalism is about pushing boundaries, refining my approach, and uncovering deeper insights. Whether solving physics problems, mentoring students, or designing academic formats, I rely on analytical reasoning and a first-principles mindset to tackle challenges effectively.</p>
+                        
+                            <p class="textColor">Knowledge gains value when shared, so I actively mentor, organize competitions, and foster critical thinking in students. By creating an environment of curiosity and innovation, I aim to empower others to go beyond their limits. Just as optimization is key in science, structured learning and collaboration drive real progress.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-text">
+                        This website is made by Mustafa and Bakdaulet
+                    </div>
+                <div>
+                `;
+            } else if (section === "resume") {
+                content.innerHTML = `
+                <div class="con">
+                    <div class="profile-container2">
+                        <div class="resume-card">
+                        <div class="glowing-line">
+
+                        <p class="Mus2">
+                        <a href="https://almaty.fizmat.kz/" target="_blank">National school of physics of math</a>
+                        </p>
+
+                        <p class="Mus3">
+                            Almaty, Kazakhstan &nbsp;&nbsp;•&nbsp;&nbsp;2022-2026
+                        </p>
+                        
+
+                        <p class="education">
+                        <br>• GPA: 5.0 (Perfect GPA)
+                        <br>• Societies: physics olympic reserve, 
+                        physics club “The Physics Frontier”
+                        <br>• Full 4-years scholarship awarded (>17,000$)
+                        </p>
+                        
+                        <div class="resume-research">
+                            <div class="glowing-line2">
+                        </div>
+                     <div class="Mus1">
+                            Education
+                        </div>
+                        
+
+                        <p class="Mus5">
+                            Independent research
+                        </p>
+                        
+                        <p class="Mus6">
+                            2024 - Present
+                        </p>
+
+
+                        <p class="researchText">
+                        <br>• Research in Quantum Particles & Brownian Motion (2024 - Present)
+                        <br>• Working on an independent research project involving the simulation of quantum particles and Brownian motion using programming. 
+                        <br>• Utilize C++ and Python to create models and analyze the physics behind microscopic movement.
+                        </p>
+
+                        <div class="resume-research3">
+                        <div class="glowing-line3">
+
+                        <div class="Mus7"> 
+                            Extracurricular Activities
+                        </div>
+
+                        <h class="Mus9b">
+                            Professional Dombra Player
+                        </h>
+                        <p class="Mus9">
+                            2021 - 2023, Active Performer
+                        </p>
+                        <div class="DombraText">
+                      <br>• Trained professionally for two years, mastering traditional Kazakh music on the dombra. 
+                            Performed in multiple school and cultural events, showcasing musical expertise and stage confidence. 
+                            Although not professionally engaged now, continue to play and participate in performances when possible.    
+                        </div>
+                        
+                        <div class="resume-research4">
+
+                        <h class="Mus4b">
+                            Chess Player
+                        </h>
+                        <p class="Mus4">
+                            Achieved 3rd Rank, 2022 - Present
+                        </p>
+                        <div class="chessText">
+                      <br>• Competed in multiple online and offline tournaments on Lichess and other platforms. 
+                            Improved critical thinking, patience, and tactical skills through competitive play.    
+                        </div>
+
+                        <div class="resume-research5">
+                        <h class="Mus5b">
+                            Programming & Competitive Coding
+                        </h>
+                        <p class="Mus5a">
+                            2023 - Present
+                        </p>
+                        <div class="CodeText">
+                      <br>• Fluent in C++ and Python
+                            Solve algorithmic problems and participate in competitive programming challenges to sharpen logical thinking.    
+                        </div>
+
+                        <div class="resume-research6">
+                        <h class="Mus6b">
+                            Member of the Speed Cubing Club
+                        </h>
+                        <p class="Mus6a">
+                            2024 - Present
+                        </p>
+                        <div class="CodeText">
+                        <br>• Engage in solving complex Rubik’s cube algorithms to enhance problem-solving speed and cognitive reflexes.    
+                        </div>    
+                        </div>
+
+                        <div class="resume-research7">
+                        <div class="glowing-line4">
+
+                        <div class="Mus8"> 
+                            Professional Experience
+                        </div>
+                        <h class="Mus8b">
+                            President of School Physics Club
+                        </h>
+                        <p class="Mus8a">
+                            2024 - Present
+                        </p>
+                        <div class="ExperText"> 
+                        <br>•Organize and lead club activities, engaging peers in advanced physics discussions and experiments.
+                            Inspire collaborative problem-solving and encouraged enthusiasm for physics    
+                        </div>
+
+                        <div class="resume-research8">
+                        <h class="Mus10b">
+                            Organiser and founder of school oral Olympiad in physics
+                        </h>
+                        <p class="Mus10a">
+                            2024 - Present
+                        </p>
+                        <div class="olymText"> 
+                        <br>•Founder of the Oral Physics Olympiad, designed to optimize grading time and enhance efficiency in this competition format. 
+                        Collaborated with fellow educators and students to refine the competition structure, enhancing fairness and effectiveness.
+                        </div>
+
+                        <div class="resume-research9">
+                        <h class="Mus11b">
+                            Jury member in City Zhautykov Olympiad
+                        </h>
+                        <p class="Mus11a">
+                            2024
+                        </p>
+                        <div class="juriText"> 
+                        <br>•Evaluated and assessed students' solutions in physics Olympiad rounds, 
+                        ensuring fair and accurate scoring.
+                        </div>
+
+                         <div class="resume-research10">
+                        <h class="Mus12b">
+                            Co-organizer of an Educational Project with Zertte Studio
+                        </h>
+                        <p class="Mus12a">
+                            2025 - Present
+                        </p>
+                        <div class="zertteText"> 
+                        <br>•One of the key organizers of a project aimed at preparing students for Olympiad-level Physics and Higher Mathematics, in collaboration with Zertte Studio. 
+                        Conduct interactive training sessions, helping students tackle advanced theoretical and problem-solving challenges.
+                        </div>
+
+                        <div class="resume-research11">
+                        <h class="Mus13b">
+                            Mentor at school
+                        </h>
+                        <p class="Mus13a">
+                            2024-Present
+                        </p>
+                        <div class="mentorText"> 
+                        <br>•Actively mentored students, providing guidance on problem-solving techniques and fostering a deeper understanding of physics concepts.
+                        </div>
+
+                        <div class="resume-research12">
+                        <h class="Mus14b">
+                            Physics tutor in the project “GetToIJSO”
+                        </h>
+                        <p class="Mus14a">
+                            2024-Present
+                        </p>
+                        <div class="tutorText"> 
+                        <br>•Created regular problem-solving videos, focusing on key physics concepts and advanced problem techniques.
+                        </div>
+
+                        <div class="Skills"> 
+                            Skills
+                        </div>
+
+                        <div class="bad1">
+                            C++ <br> <span>(fluent)</span>
+                        </div>
+                        <div class="bad2">
+                            Python <br> <span>(fluent)</span>
+                        </div>
+                        <div class="bad3">
+                            Problem Solving</span>
+                        </div>
+                        
+                        <div class="badge1">
+                            English <br> <span>(fluent)</span>
+                        </div>
+                        <div class="badge2">
+                            Russian <br> <span>(fluent)</span>
+                        </div>
+                        <div class="badge3">
+                            Kazakh <br> <span>(fluent)</span>
+                        </div>
+                        
+                        <div class="Languages"> 
+                            Languages
+                        </div>
+                        
+                    </div>
+                <div>
+                `;
+            }
+
+            
+            homeBtn.classList.toggle("active", section === "home");
+            resumeBtn.classList.toggle("active", section === "resume");
+        }
+        
+
+        // Устанавливаем стартовую страницу
+        changeSection("home");
+
+        // Добавляем события клика
+        homeBtn.addEventListener("click", () => changeSection("home"));
+        resumeBtn.addEventListener("click", () => changeSection("resume"));
+    </script>
+
+</body>
+</html>
